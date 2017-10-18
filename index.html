@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+	<title>JoJo Soundboard</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-3.1.0.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<style>
+		p {text-align:center; font-size: 16px; font-weight: bold;}
+		h1 {text-align:center}
+	</style>
+</head>
+
+<body>
+
+    <script>
+	  function play(nr){
+		   var audio = document.getElementById("audio"+nr);
+		   audio.play();
+		   
+			$("#btn"+nr).attr("src","img/button_pressed.png");
+			
+			setTimeout(function(){$("#btn"+nr).attr("src","img/button.png")}, 1000);
+		   
+		}
+   </script>
+   
+   <audio id="audio1" src="mp3/jjba/oooh god.mp3" ></audio>
+   <audio id="audio2" src="mp3/jjba/OH GOOOOOOOD.mp3" ></audio>
+   <audio id="audio3" src="mp3/jjba/OHHH MY GOOOD.mp3" ></audio>
+   <audio id="audio4" src="mp3/jjba/oh my god....mp3" ></audio>
+   <audio id="audio5" src="mp3/jjba/OOOOH NOOOO.mp3" ></audio>
+   <audio id="audio6" src="mp3/jjba/OH SHIIIT.mp3" ></audio>
+   <audio id="audio7" src="mp3/jjba/HORY SHIIT.mp3" ></audio>
+   <audio id="audio8" src="mp3/jjba/SON OF A BITCH.mp3" ></audio>
+   <audio id="audio9" src="mp3/jjba/Yare Yare Daze.mp3" ></audio>
+   <audio id="audio10" src="mp3/jjba/rero rero rero.mp3" ></audio>
+   
+   <header>
+   <h1>JoJo's Bizarre Adventure Soundboard</h1>
+   <p>featuring mainly Joseph Joestar</p>
+	<div class="container">
+	  <div class="row justify-content-center">
+		<div class="col-6 col-md-3">
+		  <img id="btn1" src="img/button.png" type="button" onclick="play(1)">
+		  <p>oooh god</p>
+		</div>
+		<div class="col-6 col-md-3">
+		  <img id="btn2" src="img/button.png" type="button" onclick="play(2)">
+		  <p>OH GOOOOOD</p>
+		</div>
+		<div class="col-6 col-md-3">
+		  <img id="btn3" src="img/button.png" type="button" onclick="play(3)">
+		  <p>OHHH MY GOOOD</p>
+		</div>
+		<div class="col-6 col-md-3">
+		  <img id="btn4" src="img/button.png" type="button" onclick="play(4)">
+		  <p>oh my god...</p>
+		</div>
+
+		<div class="col-6 col-md-3">
+		  <img id="btn5" src="img/button.png" type="button" onclick="play(5)">
+		  <p>OOOH NOOOO</p>
+		</div>
+		<div class="col-6 col-md-3">
+		  <img id="btn7" src="img/button.png" type="button" onclick="play(6)">
+		  <p>OH SHIIIT</p>
+		</div>
+		<div class="col-6 col-md-3">
+		  <img id="btn7" src="img/button.png" type="button" onclick="play(7)">
+		  <p>HORY SHIT</p>
+		</div>
+		<div class="col-6 col-md-3">
+		  <img id="btn8" src="img/button.png" type="button" onclick="play(8)">
+		  <p>SON OF A BITCH</p>
+		</div>
+	  </div>
+	  
+	  <div class="row">
+		<div class="col-6 col-md-3">
+		  <img id="btn9" src="img/button.png" type="button" onclick="play(9)">
+		  <p>yare yare daze...</p>
+		</div>
+		<div class="col-6 col-md-3">
+		  <img id="btn10" src="img/button.png" type="button" onclick="play(10)">
+		  <p>rero rero rero</p>
+		</div>
+	  </div>
+	  
+	</div>
+	<br>
+	<footer>
+	Feedback or sound clip requests? Contact <a href="https://twitter.com/Frostpebble">Frostpebble@Twitter</a> or frostpebble@gmail.com
+	</footer>
+</body>
+
+</html>
